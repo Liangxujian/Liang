@@ -1,7 +1,7 @@
 package com.mmc.test;
 
 /**
- * 可操作测试类
+ * 鍙搷浣滄祴璇曠被
  */
 public class Test {
     public static void main(String[] args) {
@@ -9,6 +9,6 @@ public class Test {
     }
 
     public void run(){
-        System.out.println("我跑得可快了");
+        System.out.println("鎴戣窇寰楀彲蹇簡");
     }
 }
