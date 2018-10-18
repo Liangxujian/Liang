@@ -4,34 +4,34 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * ×Ö·û´®Å¨ËõÆ¥ÅäĞ´·¨
+ * å­—ç¬¦ä¸²æµ“ç¼©åŒ¹é…å†™æ³•
  */
 public class Test01 {
 	public static void main(String[] args) {
-		System.out.println(domain("ÍòÀú"));
-		System.out.println(domain("µÀ¹â"));
-		System.out.println(domain("Ç¬Â¡"));
-		System.out.println(domain("±±¾©"));
-		System.out.println(domain("ÌÆÌ«×Ú"));
-		System.out.println(domain("ÓºÕı"));
+		System.out.println(domain("ä¸‡å†"));
+		System.out.println(domain("é“å…‰"));
+		System.out.println(domain("ä¹¾éš†"));
+		System.out.println(domain("åŒ—äº¬"));
+		System.out.println(domain("å”å¤ªå®—"));
+		System.out.println(domain("é›æ­£"));
 
 		String Str = new String("www.runoob.com");
 
-		System.out.print("·µ»ØÖµ :");
+		System.out.print("è¿”å›å€¼ :");
 		System.out.println(Str.matches("(.*)runoob(.*)"));
 
-		System.out.print("·µ»ØÖµ :");
+		System.out.print("è¿”å›å€¼ :");
 		System.out.println(Str.matches("(.*)google(.*)"));
 
-		System.out.print("·µ»ØÖµ :");
+		System.out.print("è¿”å›å€¼ :);
 		System.out.println(Str.matches("www(.*)"));
 		
-		System.out.print("·µ»ØÖµ :");
+		System.out.print("è¿”å›å€¼ :);
 		System.out.println(Str.matches("(.*)cn"));
 	}
 	
 	private static boolean domain(String type){
-		if(type.matches("Å¬¶û¹ş³à|»ÊÌ«¼«|Ë³ÖÎ|¿µÎõ|ÓºÕı|Ç¬Â¡|¼ÎÇì|µÀ¹â|ÏÌ·á|Í¬ÖÎ|¹âĞ÷|ĞûÍ³")){
+		if (type.matches("åŠªå°”å“ˆèµ¤|çš‡å¤ªæ|é¡ºæ²»|åº·ç†™|é›æ­£|ä¹¾éš†|å˜‰åº†|é“å…‰|å’¸ä¸°|åŒæ²»|å…‰ç»ª|å®£ç»Ÿ")) {
 			return true;
 		}
 		return false;
@@ -41,20 +41,20 @@ public class Test01 {
 		Set<String> set = new HashSet<String>();
 		
 //		List<String> list = new ArrayList<String>();
-		set.add("Â½ÏôÈ»");
-		set.add("Â½·É");
-		set.add("ÌÀ¼ÓÀö");
-		set.add("ÌÀ¼Ó·¹");
-		set.add("ÌÀ¼Ó²Ë");
-		set.add("ÌÀ¼ÓÁ£");
-		set.add("Áº·Ç·²");
-		set.add("Áº·É·²");
-		set.add("ÁõĞÑ");
-		set.add("Íâ¹º²¿");
-		set.add("²É¹º²¿");
+		set.add("é™†è§ç„¶");
+		set.add("é™†é£");
+		set.add("æ±¤åŠ ä¸½");
+		set.add("æ±¤åŠ é¥­");
+		set.add("æ±¤åŠ èœ");
+		set.add("æ±¤åŠ ç²’");
+		set.add("æ¢éå‡¡");
+		set.add("æ¢é£å‡¡");
+		set.add("åˆ˜é†’");
+		set.add("é‡‡è´­éƒ¨");
+		set.add("å¤–è´­éƒ¨");
 		for(String str : set){
-			if(str.contains("²¿")){
-				System.out.println("´æÔÚ:" + str);
+			if(str.contains("éƒ¨")){
+				System.out.println("å­˜åœ¨:" + str);
 			}
 		}
 	}
